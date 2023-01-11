@@ -1,38 +1,64 @@
+body {
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .App {
-  text-align: center;
+  max-width: 600px;
+  margin: 40px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-container {
+  border: 1px solid gray;
+  border-radius: 25px;
+  padding: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Weather .search {
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Weather .submit {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.temperature {
+  width: 50px;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: bold;
+  color: black;
+  margin-right: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.temp-btn:hover {
+  text-decoration: none;
+  color: rgb(29, 57, 48);
+}
+
+.active {
+  color: #1d6efd;
+}
+
+.Weather li {
+  list-style-type: none;
+}
+
+.Weather h2 {
+  font-size: 24px;
+}
+
+.Footer {
+  margin-top: 40px;
 }
