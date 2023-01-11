@@ -27,12 +27,12 @@ export default function FormatDate(props) {
     "November",
     "December",
   ];
-  let year = props.date.getYear();
+
   let month = months[props.date.getMonth()];
   let day = setZero(props.date.getDate());
   let dayWeek = weekDays[props.date.getDay()];
   let hours = setZero(props.date.getHours());
   let minutes = setZero(props.date.getMinutes());
-  let fulDate = `${dayWeek}, ${hours}:${minutes}, ${month},${day}, ${year}`;
+  let fulDate = `${dayWeek}, ${hours}:${minutes}, ${month},${day}`;
   return <span>{fulDate}</span>;
 }

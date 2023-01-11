@@ -22,7 +22,7 @@ export default function WeatherInfo(props) {
             <TemperatureConvertion celsius={props.info.temperature} />
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-6 text-left">
           <ul>
             <li>Pressure {props.info.pressure} hPa</li>
             <li>Humidity {props.info.humidity}%</li>
