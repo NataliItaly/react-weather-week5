@@ -20,13 +20,15 @@ export default function WeatherForecastDay (props) {
     return (
       <div>
         <div className="DailyForecastDay">{setDayOfWeek()}</div>
-        <WeatherIcon code={props.data.weather[0].icon} size={36} />
+        <div className="DailyWeatherIcon">
+          <WeatherIcon code={props.data.weather[0].icon} size={36} />
+        </div>
         <div className="WeatherDailyTemperature">
           <span className="DailyMaxTemperature font-weight-bold">
-            {Math.round(props.data.temp.max)}°
+            {Math.round(props.data.temp.max)}°C
           </span>
           <span className="DailyMinTemperature font-weight-bold">
-            {Math.round(props.data.temp.min)}°
+            {Math.round(props.data.temp.min)}°C
           </span>
         </div>
       </div>
