@@ -1,7 +1,11 @@
 body {
+  height: 100vh;
   color: #f1dbc8;
   background-image: url("../public/bg.jpg");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 a {
@@ -16,7 +20,7 @@ a:hover {
 
 .App {
   max-width: 600px;
-  margin: 40px auto;
+
 }
 
 .weather-container {
