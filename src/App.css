@@ -59,8 +59,26 @@ a:hover {
   font-size: 24px;
 }
 
+.DailyMaxTemperature,
+.DailyMinTemperature {
+    font-weight: bold;
+}
+
+.DailyMinTemperature {
+    opacity: 0.6;
+    margin-left: 5px;
+}
+
+.WeatherDailyForecast {
+    text-align: center;
+}
+
 .Footer {
   margin-top: 40px;
+}
+
+.Footer a {
+  opacity: 0.7
 }
 
 
