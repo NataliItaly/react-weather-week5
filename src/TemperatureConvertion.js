@@ -38,7 +38,7 @@ export default function TemperatureConvertion(props) {
           <a href="/" onClick={convertToCelsius} className="temp-btn">
             °C
           </a>
-          <pre> / </pre>
+          <span> / </span>
           <a href="/" onClick={convertToFarenheit} className="temp-btn active">
             °F
           </a>

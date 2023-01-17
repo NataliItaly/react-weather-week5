@@ -1,0 +1,14 @@
+.DailyMaxTemperature,
+.DailyMinTemperature {
+    font-weight: bold;
+}
+
+.DailyMinTemperature {
+    opacity: 0.6;
+    margin-left: 5px;
+}
+
+.WeatherDailyForecast {
+    text-align: center;
+
+}
