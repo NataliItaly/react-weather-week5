@@ -12,13 +12,11 @@ export default function WeatherDailyForecast (props) {
     }, [props.coordinates])
 
     function handleResponse(response) {
-        console.log(response);
         setForecast(response.data.daily);
         setLoaded(true);
     }
 
     if (loaded) {
-      console.log(forecast);
         return (
           <div className="WeatherDailyForecast">
             <div className="row">
@@ -41,7 +39,7 @@ export default function WeatherDailyForecast (props) {
     }
 
     else {
-        const apiKey = "5c08670149a0b1a4dc7a372a3d5e5333";
+        const apiKey = "532bbde7b41bee3c5d0c5f169be59794";
         let latitude = props.coordinates.lat;
         let longitude = props.coordinates.lon;
         let units = "metric";

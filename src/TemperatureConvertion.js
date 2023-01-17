@@ -30,7 +30,7 @@ export default function TemperatureConvertion(props) {
     );
   } else {
     let farenheit = Math.round(props.celsius * 1.8 + 32);
-    console.log(props.celsius);
+    
     return (
       <div className="WeatherTemperature">
         <p className="d-flex align-items-start">
